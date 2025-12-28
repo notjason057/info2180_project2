@@ -1,0 +1,189 @@
+/* Ensure full height of page layout */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Container for the entire page */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Top header */
+.top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar styling */
+.side {
+    background-color: #ffffff;
+    height: 100%;
+    flex: 0 0 250px;
+    position: relative;
+    padding-top: 60px; 
+}
+
+/* Content section */
+.content {
+    background-color: #D3D3D3;
+    flex-grow: 1;
+    padding: 40px;
+    min-height: calc(100vh - 60px);
+    box-sizing: border-box;
+}
+
+#avatar{
+    width: 48px;
+    margin-right: 4px;
+
+}
+
+/* Container for the form and content */
+.container {
+    max-width: 1200px;
+    margin: 8px;
+}
+
+#detail{
+    margin-left: 48px;
+}
+
+
+#conatiner-details {
+    background-color: white;
+    border: solid grey 1px;
+    border-radius: 4px;
+    margin: 8px;
+    padding: 16px;
+}
+
+.content-margin_dif{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.label {
+    margin: 8px;
+    color: grey;
+    margin-bottom: 4px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+.content-margin{
+    margin: 8px;
+}
+
+#container-notes-list{
+    background-color: white;
+    border: solid grey 1px;
+    border-radius: 4px;
+    margin: 32px;
+    padding: 16px;
+}
+#container-addnotes{
+    background-color: white;
+    border: solid grey 1px;
+    border-radius: 4px;
+    margin-left: 32px;
+}
+
+
+#top_or_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.btn:hover {
+    background-color: #004494;
+}
+
+#button-group {
+    margin-left: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-assign, .btn-switch {
+    padding: 10px;
+    font-size: 14px;
+    display: inline-flex;
+    border: none;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.btn-assign {
+    background-color: green;
+}
+
+.btn-switch {
+    background-color: orange;
+}
+
+.btn-assign img, .btn-switch img {
+    width: 16px;
+}
+
+.btn-assign img{
+    width: 16px;
+}
+.btn-switch img{
+    width: 16px;
+}
+
+#content_container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+}
+textarea {
+    width: 1200px; 
+    height: 150px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+
+
+/* Table styling */
+.note {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.note small {
+    display: block;
+    color: #666;
+    margin-top: 5px;
+}
