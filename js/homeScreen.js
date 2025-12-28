@@ -1,4 +1,4 @@
-console.log("dashboard.js loaded");
+console.log("homeScreen.js loaded");
 
 function toggleRowVisibility(row, condition) {
   // Show or hide a table row based on the condition
