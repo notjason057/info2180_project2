@@ -1,0 +1,331 @@
+/* Modern Dashboard Styles - Override all other styles */
+
+/* Override sidebar to be light grey */
+.side,
+body .side,
+.main-container .side,
+html body .main-container .side {
+    background-color: #f2f2f2 !important;
+    position: relative !important;
+    height: 100% !important;
+    flex: 0 0 250px !important;
+    border-right: 1px solid #e9ecef !important;
+}
+
+/* Ensure sidenav is transparent to show .side background */
+.sidenav,
+body .sidenav,
+.side .sidenav {
+    background-color: transparent !important;
+}
+
+/* Override content area with correct background color */
+.content,
+body .content,
+.main-container .content,
+html body .main-container .content {
+    padding: 32px !important;
+    flex-grow: 1 !important;
+    min-height: calc(100vh - 60px) !important;
+    box-sizing: border-box !important;
+    margin-top: 0 !important;
+    background-color: #8f9092 !important;
+}
+
+/* Modern content header with better typography */
+.content-header {
+    margin-bottom: 32px !important;
+    margin-left: 120px !important;
+    width: 88% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.content-header h1 {
+    margin: 0 !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    color: #1a1d29 !important;
+    letter-spacing: -0.5px !important;
+}
+
+/* Add New Button - on the right side, blue color - override Bootstrap */
+.content-header .btn-add-contact,
+.content-header button.btn-add-contact,
+button.btn-add-contact,
+.btn-add-contact,
+#main-content-container .content-header .btn-add-contact,
+#main-content-container .content-header button {
+    padding: 10px 20px !important;
+    background-color: #0056b3 !important;
+    background: #0056b3 !important;
+    background-image: none !important;
+    color: white !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+    box-shadow: 0 2px 4px rgba(0, 86, 179, 0.2) !important;
+    margin-left: auto !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+}
+
+.content-header .btn-add-contact:hover,
+.content-header button.btn-add-contact:hover,
+button.btn-add-contact:hover,
+.btn-add-contact:hover,
+#main-content-container .content-header .btn-add-contact:hover,
+#main-content-container .content-header button:hover {
+    background-color: #004494 !important;
+    background: #004494 !important;
+    background-image: none !important;
+    box-shadow: 0 4px 6px rgba(0, 86, 179, 0.3) !important;
+    transform: translateY(-1px) !important;
+    color: white !important;
+}
+
+/* Modern content container with enhanced shadow and spacing */
+#content_container {
+    background-color: #ffffff !important;
+    padding: 32px !important;
+    margin-left: 120px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06) !important;
+    width: 80% !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Modern table styles */
+#content_container table {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    background-color: #fff !important;
+}
+
+/* Modern table header with subtle gradient */
+#content_container thead {
+    background: linear-gradient(to bottom, #f8f9fa 0%, #f1f3f5 100%) !important;
+    color: #495057 !important;
+}
+
+#content_container thead th {
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    color: #6c757d !important;
+    padding: 16px 12px !important;
+    border-bottom: 2px solid #e9ecef !important;
+}
+
+/* Modern table cells with better spacing */
+#content_container tbody td {
+    padding: 16px 12px !important;
+    text-align: left !important;
+    border-bottom: 1px solid #f1f3f5 !important;
+    color: #212529 !important;
+    font-size: 14px !important;
+    transition: background-color 0.2s ease !important;
+}
+
+/* Row hover effect */
+#content_container tbody tr {
+    transition: background-color 0.15s ease, transform 0.1s ease !important;
+}
+
+#content_container tbody tr:hover {
+    background-color: #f8f9fa !important;
+    transform: translateX(2px) !important;
+}
+
+/* Remove border from last row */
+#content_container tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+/* Table container */
+#content_container .table-container {
+    margin: 0 !important;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+/* Modern filter styling with pill/chip design */
+#content_container #filtertxt {
+    font-weight: 600 !important;
+    color: #495057 !important;
+    margin-right: 16px !important;
+    font-size: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+#content_container #filter-container {
+    margin-bottom: 24px !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    padding: 20px 0 !important;
+    border-bottom: 1px solid #e9ecef !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+}
+
+#content_container #filter-container img {
+    width: 16px !important;
+    margin-right: 8px !important;
+    opacity: 0.7 !important;
+}
+
+/* Modern filter option styles - pill/chip design */
+#content_container .filter-option {
+    margin-right: 0 !important;
+    cursor: pointer !important;
+    color: #6c757d !important;
+    text-decoration: none !important;
+    padding: 8px 16px !important;
+    position: relative !important;
+    background-color: #f8f9fa !important;
+    border-radius: 20px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+    border: 1px solid transparent !important;
+    display: inline-block !important;
+}
+
+#content_container .filter-option:hover {
+    color: #495057 !important;
+    background-color: #e9ecef !important;
+    transform: translateY(-1px) !important;
+}
+
+#content_container .filter-option.selected {
+    color: #0056b3 !important;
+    background-color: #e7f3ff !important;
+    border-color: #0056b3 !important;
+    font-weight: 600 !important;
+}
+
+#content_container .filter-option.selected::after {
+    display: none !important;
+}
+
+/* Modern type badges/pills */
+#content_container .type-container {
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 6px 12px !important;
+    border-radius: 12px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px !important;
+    text-transform: capitalize !important;
+}
+
+#content_container .sales-lead {
+    background-color: #fff3cd !important;
+    color: #856404 !important;
+    border: 1px solid #ffeaa7 !important;
+}
+
+#content_container .support {
+    background-color: #cfe2ff !important;
+    color: #084298 !important;
+    border: 1px solid #9ec5fe !important;
+}
+
+/* Modern type-action container */
+#content_container .type-action-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+/* Modern view link */
+#content_container .view-link {
+    color: #0056b3 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    transition: all 0.2s ease !important;
+    position: relative !important;
+}
+
+#content_container .view-link::before {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 2px !important;
+    left: 8px !important;
+    right: 8px !important;
+    height: 2px !important;
+    background-color: #0056b3 !important;
+    transform: scaleX(0) !important;
+    transition: transform 0.2s ease !important;
+}
+
+#content_container .view-link:hover {
+    color: #004085 !important;
+    background-color: #f0f7ff !important;
+}
+
+#content_container .view-link:hover::before {
+    transform: scaleX(1) !important;
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#content_container .table-container {
+    animation: fadeIn 0.3s ease-out !important;
+}
+
+/* Button styles - ensure all buttons are visible */
+button,
+.btn,
+button[type="submit"],
+.form-container button,
+.form-actions button,
+#sbt-bt-container button {
+    background-color: #0056b3 !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+button:hover,
+.btn:hover,
+button[type="submit"]:hover,
+.form-container button:hover,
+.form-actions button:hover,
+#sbt-bt-container button:hover {
+    background-color: #004494 !important;
+}
