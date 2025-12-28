@@ -5,4 +5,4 @@ Group Members:
 2. Sashoy Morris
 3. Kyval Waysome
 4. Oshawny Bucknor
-5. Jason 
+5. Jason Matthews
