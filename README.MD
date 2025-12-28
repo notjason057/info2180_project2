@@ -1,4 +1,4 @@
-Dolphin CRM Project
+Dolphin CRM Project Group 42
 
 Group Members:
 1. Tajae Montaque
